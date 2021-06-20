@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "simplesocialnetwork",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authsimplesocialnetwork420169b9",
+      "Outputs.UserPoolId"
+    ]
+  }
+}

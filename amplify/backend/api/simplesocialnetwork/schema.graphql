@@ -1,0 +1,9 @@
+type UserInfo @model @auth(rules: [{ allow: owner, queries: null }]) {
+  id: ID!
+  userId: String!
+  name: String!
+  phone: Int
+  birthday: Int
+  workPlace: String
+  interests: [String]
+}
